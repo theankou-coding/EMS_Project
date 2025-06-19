@@ -38,6 +38,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('vendors', AllResourcesController::class);
     Route::resource('participations', AllResourcesController::class);
     Route::resource('admins', AllResourcesController::class);
+    Route::resource('settings', AllResourcesController::class);
+    Route::resource('auths', AllResourcesController::class);
 });
 
 require __DIR__ . '/settings.php';
