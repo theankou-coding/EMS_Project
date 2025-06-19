@@ -38,7 +38,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::resource('events', AllResourcesController::class);
     Route::resource('users', AllResourcesController::class);
-    Route::resource('vendors', AllResourcesController::class);
     Route::resource('participations', AllResourcesController::class);
     Route::resource('admins', AllResourcesController::class);
 });
