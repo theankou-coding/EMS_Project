@@ -1,4 +1,4 @@
-# 🎟️ EMS Project
+# Event Management System (Project)
 
 A Laravel-based **Event Management System (EMS)** with:
 
@@ -69,7 +69,7 @@ npm run dev
 ** Ensure .env file has correct database configuration for Docker: **
 
 ```env
-DB_HOST=127.0.0.1 DB_PORT=3306:3306 DB_DATABASE=laravel DB_USERNAME=root DB_PASSWORD=your_password
+DB_HOST=127.0.0.1 DB_PORT=3311:3306 DB_DATABASE=laravel DB_USERNAME=root DB_PASSWORD=your_password
 ```
 
 
