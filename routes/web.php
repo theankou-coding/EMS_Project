@@ -27,7 +27,7 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('/admin/me', [AdminAuthController::class, 'me']);
 });
 
-// Protected routes with authentication and email verification
+
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
