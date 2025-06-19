@@ -33,9 +33,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
 
-    // You may want to separate controllers per resource for clarity,
-    // but if you have one controller handling all, this is okay.
-
     Route::resource('events', AllResourcesController::class);
     Route::resource('users', AllResourcesController::class);
     Route::resource('vendors', AllResourcesController::class);
