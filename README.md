@@ -25,9 +25,11 @@ composer require tymon/jwt-auth
 
 Run MySQL in a Docker container:
 
+```env
 docker run -p 3311:3306 --name ems_db -e MYSQL_ROOT_PASSWORD=your_password -d mysql:latest
+```
 
-Replace your_password with your preferred root password.
+** Replace your_password with your preferred root password.**
 
 ### 3. Build Frontend Assets
 
@@ -67,7 +69,7 @@ npm run dev
 ** Ensure .env file has correct database configuration for Docker: **
 
 ```env
-DB_HOST=127.0.0.1 DB_PORT=3306 DB_DATABASE=laravel DB_USERNAME=root DB_PASSWORD=your_password
+DB_HOST=127.0.0.1 DB_PORT=3306:3306 DB_DATABASE=laravel DB_USERNAME=root DB_PASSWORD=your_password
 ```
 
 
